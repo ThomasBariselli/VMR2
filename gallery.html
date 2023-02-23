@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home - Vissone Mountain Race</title>
+<link rel="icon" type="image/x-icon" href="immagini/logoBianco.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+.button {
+  border-radius: 3%;
+  border:none;
+  background-color: #FF8E24;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 100%;
+  padding: 10%;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\1F6C8';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover
+{
+  border-width: 1px 2px 1px 2px;
+  background-color: #FF8E24;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.button:hover span:after {
+  
+  opacity: 1;
+  right: 0;
+}
+
+
+#myVideo {
+  width: 100em;
+  max-height: 60em;
+  top: 0em;
+    left: 0;
+    right: 0;
+    z-index: -999;
+  /*
+  margin-top: 6em;
+  width: 100%;*/
+}
+
+.content1 {
+  position: fixed;
+  z-index: -999;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FF8E24;
+  width: 70%;
+  margin-top: 0em;
+  height: 100%;
+  right: 15%;
+  left: 15%;
+}
+
+h1
+{
+  color: white;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 37%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h3
+{
+  color: #FF8E24;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-left: 35%;
+  margin-right: 20%;
+}
+
+
+
+
+</style>
+</head>
+<body style="background-color: #FF8E24;">
+<!-- Navbar -->
+
+<div class="w3-top" style="background-color: #FF8E24;" >
+  <div class="p" style="background-color: #FF8E24;font-size: 1.1em;">
+      <p align='justify'>
+    <img src="immagini/logoArancio.png" align='left' style="width:10%;margin-bottom: 0.2em;margin-left: 0.2em" >
+   </p>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars" ></i></a>
+   <a href="index.htm" style="color:white;margin-left:44.9%;margin-top: 5.3em;text-decoration: none" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+   <a href="chisiamo.html" style="margin-left:0em;margin-top: 5.3em;color: white;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHI SIAMO</a>
+     <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" style="margin-top: 5.3em;background-color: #FF8E24;color: white;" title="More">GARA <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4" >
+        <a href="5.html" style="position: relative;background-color: #FF8E24;color:white" class="w3-bar-item w3-button">5km NON COMPETITIVA</a>
+        <a href="10.html" style="position: relative;background-color: #FF8E24; color:white" class="w3-bar-item w3-button">10km COMPETITIVA</a>
+      </div>
+    </div>
+    <a href="dovesiamo.html" style="margin-top: 5.3em;color: white;background-color: #FF8E24;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOVE SIAMO</a>
+    <a href="gallery.html" style="margin-top: 5.3em;color:#FF8E24; background-color: black;"class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOTO E VIDEO</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-bottom:4em;background-color: #FF8E24;">
+    <a href="index.htm" style=" background-color:#FF8E24;text-decoration: none" class="w3-bar-item w3-button w3-padding-large" >HOME</a>
+    <a href="chisiamo.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CHI SIAMO</a>
+    <a href="dovesiamo.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOVE SIAMO</a>
+    <a href="gallery.html" style="color: black;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOTO E VIDEO</a>
+    <a href="5.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">5km</a>
+    <a href="10.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">10km</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width: 100em;z-index: -1;" >
+
+  
+ <div class="container" style="height: 1em;padding-bottom: 50px;padding-top: 50px;">
+   <video autoplay muted loop id="myVideo" style="position: fixed;" >
+      <source src="immagini/video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video> 
+    
+    <div class="content1">
+      <h1>VISSONE MOUNTAIN RACE<h3>2 GIUGNO 2023<br><br></h3></h1>
+    </div>
+    
+  </div> 
+
+  <div style="background-color: white;">
+     <div class="w3-container w3-content w3-center w3-padding-64" style="margin-top: 55%;width: 100% ;background-color: white;" id="band">
+    <h2 class="w3-wide">VISSONE MOUNTAIN RACE</h2>
+    <p class="w3-justify">La gara podistica Vissone Mountain race nasce dalla nostra passione per lo sport e per il territorio. Tra i sentieri, i prati e i boschi dei comuni di Pian Camuno ed Artogne, passando per la località turistica di Montecampione, si sviluppa il percorso di 11 km che vi immergerà in questa rigogliosa area della bassa Valle Camonica.
+      600 metri di dislivello, salite e discese di ogni genere, dal piccolo centro di Vissone, passando per la località turistica di Montecampione attraverso fantastici paesaggi.
+      Vedere questi luoghi animati dai corridori ci riempie d’orgoglio, vi aspettiamo per questa fantastica avventura nel verde!
+      </p>
+      </div>
+  </div>
+
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="background-image: url('immagini/3.jpg');min-height: 500px; background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover;">
+      <h2 class="w3-wide w3-center" >I PERCORSI</h2>
+      <p class="w3-opacity w3-center"><i>Per partecipare alla Vissone Mountain race ci sono due opzioni:</i><br>
+      <i>La corsa competitiva di 11 km e il trekking organizzato lungo il percorso gara, adatto a tutti, bambini compresi. </i></p><br>
+
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 auto;display: flex; justify-content: center;align-items: center;">
+        <div class="w3-third w3-margin-bottom">
+          <img src="immagini/5km.jpg" alt="" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white" >
+            <p><b>Corsa non competitiva - 5 km</b></p>
+            <p class="w3-opacity">Ven 2 Giu 2023</p>
+            <div style="font-size: small;"><p>Scopri di più sul trekking organizzato lungo il percorso gara, adatto a tutti, bambini compresi! </p></div>
+            <div style="margin:0 auto;display: flex;justify-content: center;"><button onclick="window.location.href='5.html'" class="button"><span>Scopri di più</span></button></div>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="immagini/10k.jpg" alt="" style="width:100%;max-height: 11.6em;" class="w3-hover-opacity">
+          <div class="w3-container w3-white" >
+            <p><b>Corsa competitiva - 11km</b></p>
+            <p class="w3-opacity">Ven 2 Giu 2023</p>
+            <div style="font-size: small;"><p>Scopri di più e iscriviti alla corsa competitiva di 11 km!</p></div><br>
+            <div style="margin:0 auto;display: flex;justify-content: center;"><button  onclick="window.location.href='10.html'" class="button"><span>Scopri di più</span></button></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div style="background-color: white;">
+    <br><br>
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px;background-color: white" id="contact">
+    <h2 class="w3-wide w3-center">Lorem ipsum dolor sit</h2>
+    <p class="w3-opacity w3-center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quidem molestias aperiam iure inventore. Tempore nam deleniti excepturi soluta. Ipsum deleniti molestias dolore. Ratione eligendi, impedit rem necessitatibus eaque ea.</i></p><br><br>
+    </div>
+<div style="background-color: white;background-image: url('immagini/nature.jpg'); min-height: 500px; background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover;">
+</div>
+  
+  <!-- The Contact Section -->
+  
+  <div style="background-color: white;">
+    <br><br>
+  <div class="w3-container w3-content w3-padding-64" style="background-color: white;""  id="contact">
+    <h2 class="w3-wide w3-center">CONTATTI</h2>
+    <p class="w3-opacity w3-center"><i>Qui trovi i nostri contatti!</i></p><br><br><br>
+    <div style="margin:0 auto;display: flex; justify-content: center;align-items: center;">
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-map-marker"></i><br><div style="font-size: small">Vissone, BS</div></div>
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-phone"></i><br><div style="font-size: small">Tel: 333 333 3333</div></div>
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-envelope" > </i><br><div style="font-size: small">vissonemountainrace@gmail.com</div></div>
+    </div>
+      </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<div style="background-color: white;">
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <button class="fa fa-facebook-official w3-hover-opacity" style="background-color: Transparent; border: none;"onclick="window.location.href='https://www.facebook.com/VissoneMountainRace?hc_ref=ARRjN_BTtNNq9cidZe45MWe055V8ne9RuA3rlqEfSoh0x6AKVdSfDeWNj0nMz61PWK8&fref=nf&__xts__[0]=68.ARAru8CAdHx48UcYAqZRXsGm1b7Luyjj4RhQGucmJXydpIGkTLyPfOwDDLvg3MzPkqHRzvecdkZsrsJjVUP-onmkS3F-jJJOrhAAjgMQN_vUPOsAXl901xYAM-_yhspMIq8Z1Rdk1ZNMx4DHAXdbQxGsPcU28G5jEgDrYQPiWIMr8rqvrktwXXPM2y9VcnU3CvxMltVHiSZUCPUsHMpKwZlhw9eK0212JsgVN9oQu4cpBas5K9_EqeeGrgXGsH-BIGz0ZKhevn6VIJRUYSTezzUIHASSd4zc'"></button>
+  <button class="fa fa-instagram w3-hover-opacity" style="background-color: Transparent; border: none;" onclick="window.location.href='https://www.instagram.com/vissonemountainrace/'"></button>
+  <p class="w3-medium">Copyright &copy; Vissone Mountain Race 2023</p>
+</footer>
+</div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the video
+var video = document.getElementById("myVideo");
+
+
+// Pause and play the video, and change the button text
+function myFunction1() {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
+
+</script>
+
+</body>
+</html>

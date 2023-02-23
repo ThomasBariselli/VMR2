@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Corsa competitiva - 11km - Vissone Mountain Race</title>
+<link rel="icon" type="image/x-icon" href="immagini/logoBianco.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {font-family: "Lato", sans-serif}
+
+
+.button {
+  border-radius: 3%;
+  border:none;
+  background-color: #FF8E24;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 100%;
+  padding: 10%;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\1F6C8';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover
+{
+  border-width: 1px 2px 1px 2px;
+  background-color: #FF8E24;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.button:hover span:after {
+  
+  opacity: 1;
+  right: 0;
+}
+
+
+#myVideo {
+  max-width: 90%;
+  margin-top: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+   z-index: -999;
+}
+
+.content1 {
+  position: relative;
+  background: white;
+  color: #FF8E24;
+  width: 38%;
+  margin-top: 0%;
+  margin-left: 62%;
+}
+
+.colonna{
+  float: left;
+}
+
+@media (max-width: 600px) {
+  .colonna.sinistra.destra {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .colonna.destra.h2 {
+    font-size: 1.8vw;
+  }
+}
+@media (max-width: 600px) {
+  .colonna.destra.p {
+    font-size: 1vw;
+  }
+  .colonna.sinistra.p {
+    font-size: 1vw;
+  }
+}
+@media (min-width: 601px) {
+  .colonna.sinistra {
+    width: 55%;
+  }
+}
+@media (min-width: 601px) {
+  .colonna.destra {
+    width: 45%;
+  }
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1
+{
+  color: white;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 37%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h3
+{
+  color: #FF8E24;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-left: 35%;
+  margin-right: 20%;
+}
+
+
+  .colonna.sx{
+    width: 45%;
+    margin-left: 2%;
+    display: inline-block;
+  }
+  .colonna.dx{
+    width: 45%;
+    margin-left: 5%;
+    display: inline-block;
+  }
+  @media (min-width: 601px){
+  .colonna.sxb{
+    width: 45%;
+    margin-left: 2%;
+    display: inline-block;
+  }
+  .colonna.dxb{
+    width: 45%;
+    margin-left: 5%;
+    display: inline-block;
+  }
+}
+@media (max-width: 601px){
+  .colonna.sxb{
+    width: 100%;
+  }
+  .colonna.dxb{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #FF8E24;
+  color: black;
+  text-align: center;
+  font-size: 100%;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\1F6C8';
+  color: white;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover
+{
+  border-width: 1px 2px 1px 2px;
+  background-color: #FF8E24;
+  border: none;
+  color: #FFFFFF;
+}
+.button:hover span:after {
+  
+  opacity: 1;
+  right: 0;
+}
+
+
+</style>
+</head>
+<body style="background-color: black;">
+<!-- Navbar -->
+
+<div class="w3-top" style="background-color: #FF8E24;" >
+  <div style="background-color: #FF8E24;font-size: 1.1em;">
+      <p align='justify'>
+    <img src="immagini/logoArancio.png" align="left" style="width:10%;margin-bottom: 0.2em;margin-left: 0.2em" >
+   </p>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <a href="index.htm" style="color:white;margin-left:44.9%;margin-top: 5.3em;text-decoration: none" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+   <a href="chisiamo.html" style="margin-left:0em;margin-top: 5.3em;color: white;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHI SIAMO</a>
+     <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" style="margin-top: 5.3em;color:#FF8E24; background-color: black;" title="More">GARA <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4" >
+        <a href="5.html" style="position: relative;color:white;background-color:#FF8E24 " class="w3-bar-item w3-button">5km NON COMPETITIVA</a>
+        <a href="10.html" style="position: relative;color:#FF8E24; background-color: black;" class="w3-bar-item w3-button">10km COMPETITIVA</a>
+      </div>
+    </div>
+    <a href="dovesiamo.html" style="margin-top: 5.3em;color: white;background-color: #FF8E24;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOVE SIAMO</a>
+    <a href="gallery.html" style="margin-top: 5.3em;color: white;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOTO E VIDEO</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="background-color: #FF8E24;">
+    <a href="index.htm" style="background-color:#FF8E24;text-decoration: none" class="w3-bar-item w3-button w3-padding-large" >HOME</a>
+    <a href="chisiamo.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CHI SIAMO</a>
+    <a href="dovesiamo.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOVE SIAMO</a>
+    <a href="gallery.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOTO E VIDEO</a>
+    <a href="5.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">5km</a>
+    <a href="10.html" style="color: black;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">10km</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width: 100em;z-index: -1;" >
+
+  <div class="row">
+  <div class="colonna sinistra"">
+    <video autoplay muted loop id="myVideo" >
+      <source src="immagini/VM10.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video> 
+  </div>
+    
+  <div class="colonna destra" style="text-align: center;padding-left: 2%;padding-right: 2%;margin-top: 15%;">
+      <h2 style="font-family:'Helvetica';font-weight: bold;text-align: center;color: #FF8E24;">VISSONE MOUNTAIN RACE - 11KM</h2>
+      <p style="color:white">Il Percorso prevede una distanza di 11 Km circa con un dislivello di 700+ e 700- circa, altezza minima 650mt. quota massima 1147mt.
+        Buona parte del percorso di svolge su sentieri nel bosco adiacente a Vissone/Montecampione,strade sterrate  e una minima parte su strada. In caso di terreno bagnato prestare molta attenzione ai tratti in discesa in quanto possono essere scivolosi.
+        L'arrivo e la partenza sono previsti presso il campo sportivo di Vissone. Il percorso è adeguatamente segnalato: saranno presenti cartelli indicatori plastifi-cati, nastri colorati, frecce segnaletiche sul terreno e bandierine, nonché personale in più punti lungo il percorso. Inoltre lungo il percorso sono predisposti punti di controllo e ristoro. La manifestazione è integral-mente assicurata. L'atleta è tenuto al rispetto del codice della strada. Partenza in linea con cronometraggio manuale.
+        Il tempo massimo di percorrenza è fissato in 3 ore e 30 minuti dall’inizio della gara, oltre questo periodo verrà sospeso il cronome-traggio e tutti gli atleti non ancora pervenuti al traguardo verranno considerati fuori classifica.
+        </p>
+  </div>
+</div>
+    
+
+  <div style="background-color: white;margin-top: 5%;">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="background-color: white;position: relative;" id="band">
+      <div class="colonna sx" style="text-align: center;">
+        <h2 style="font-family:'Helvetica';font-weight: bold;text-align: center;">PROGRAMMA</h2>
+        <p>
+          <p>Venerdì 02 Giugno 2023</p>
+          <p>07:00 - ritrovo presso campo sportivo di Vissone</p>
+          <p>09:30 - partenza (tempo massimo manifestazione 3,30h)</p>
+          <p>A seguire premiazioni</p>
+        </p>
+      </div>
+      <div class="colonna dx" style="text-align: center;padding-left: 2%;padding-right: 2%;">
+        <h2 style="font-family:'Helvetica';font-weight: bold;text-align: center;">REGOLAMENTO</h2>
+        <p>Possono partecipare alla "VISSONE MOUNTAIN RACE" tutti gli atleti che abbiano compiuto il 16° anno di età, tutti i tesserati FSA o enti di promozione sportiva e liberi (che siano in possesso del certificato medico sportivo) per l'edizione competitiva, mentre per la camminata è aperta a tutti...<a href="https://www.lemulatere.it/vissone/gara.html" style="font-style: italic;color: #FF8E24;">Leggi tutto</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-black" id="tour">
+    <div class="row">
+      <div class="colonna sxb" style="display: inline-block;">
+        <h2 style="margin-top:6%;font-family:'Helvetica';font-weight: bold;color: #FF8E24;text-align: center;">CATEGORIE</h2>
+        <p>
+          <p style="text-align: center;"><strong>-SENIORES</strong> nati fino al 1994, verranno premiati<br> i primi 3 maschi e le prime 3 femmine - <strong>premio natura</strong></p>
+          <p style="text-align: center;"><strong>-AMATORI</strong> nati dal 1981 al 1993, verranno premiati<br> i primi 3 maschi e le prime 3 femmine - <strong>premio natura</strong></p>
+          <p style="text-align: center;"><strong>-MASTER</strong> nati dal 1968 al 1980, verranno premiati<br> i primi 3 maschi e le prime 3 femmine - <strong>premio natura</strong></p>
+          <p style="text-align: center;"><strong>-VETERANI</strong> nati nel 1967 o prima, verranno premiati<br> i primi 3 maschi e le prime 3 femmine - <strong>premio natura</strong></p>
+        </p>
+      </div>
+        
+      <div class="colonna dxb" style="text-align: center;padding-left: 2%;padding-right: 2%;color: #FF8E24;display: inline-block;">
+          <h2 style="margin-top:6%;font-family:'Helvetica';font-weight: bold;text-align: center;">I PREMI</h2>
+          <table style="width: 100%;margin-top: 6%;">
+            <tr>
+              <th colspan="3" style="color: white;text-align: center;">Categoria assoluta maschile</th>
+              <td style="color: black;">aaa</td>
+              <th colspan="3" style="color: white;text-align: center;">Categoria assoluta femminile</th>
+            </tr>
+            <tr style="color: black;">
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+              <td>aaa</td>
+            </tr>
+            <tr>
+              <td>1°</td>
+              <td>&nbsp;Classificato B.V.</td>
+              <td>&nbsp;&nbsp;&nbsp;€100,00</td>
+              <td style="color: black;">aaa</td>
+              <td>1°</td>
+              <td>&nbsp;Classificato B.V.</td>
+              <td>&nbsp;&nbsp;&nbsp;€100,00</td>
+            </tr>
+            <tr>
+              <td>2°</td>
+              <td> Classificato B.V.</td>
+              <td>   €80,00</td>
+              <td style="color: black;">aaa</td>
+              <td>2°</td>
+              <td> Classificato B.V.</td>
+              <td>   €80,00</td>
+            </tr>
+            <tr>
+              <td>3°</td>
+              <td> Classificato B.V.</td>
+              <td>   €50,00</td>
+              <td style="color: black;">aaa</td>
+              <td>3°</td>
+              <td> Classificato B.V.</td>
+              <td>   €50,00</td>
+            </tr>
+            <tr>
+              <td>4°</td>
+              <td> Classificato B.V.</td>
+              <td>   €40,00</td>
+              <td style="color: black;">aaa</td>
+              <td>4°</td>
+              <td> Classificato B.V.</td>
+              <td>   €40,00</td>
+            </tr>
+            <tr>
+              <td>5°</td>
+              <td> Classificato B.V.</td>
+              <td>   €30,00</td>
+              <td style="color: black;">aaa</td>
+              <td>5°</td>
+              <td> Classificato B.V.</td>
+              <td>   €30,00</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: white;margin-top: 3%;">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="background-color: white;position: relative;" id="band">
+      <h2 style="font-family:'Helvetica';font-weight: bold;text-align: center;">ISCRIZIONE</h2>
+      <p>Costo iscrizione :
+        Euro 10,00 fino al 22/05
+        Euro 15,00 dal 23/05 al giorno della gara, tale cifra comprende:<br>
+        -Assistenza su tutto il percorso<br>
+        -Gadget tecnico<br>
+        -Ristori lungo il percorso<br>
+        -Controllo Pettorali<br>
+        -Al traguardo un abbondante ristoro</br>
+        Le Iscrizioni verranno chiuse al raggiungimento massimo di 200 partecipanti.<br> La quota di iscrizione non e' rimborsabile in caso di rinuncia.</p>
+        <button onclick="window.location.href='https://www.lemulatere.it/vissone/iscrizione.html'" style="margin-top: 2%;" class="button"><span>Iscriviti qui</span></button>
+        
+    </div>
+  </div>
+<div style="background-color: white;background-image: url('immagini/nature.jpg'); min-height: 500px; background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover;">
+</div>
+  
+  <!-- The Contact Section -->
+  
+  <div style="background-color: white;">
+    <br><br>
+  <div class="w3-container w3-content w3-padding-64" style="background-color: white;"  id="contact">
+    <h2 class="w3-wide w3-center">CONTATTI</h2>
+    <p class="w3-opacity w3-center"><i>Qui trovi i nostri contatti!</i></p><br><br><br>
+    <div style="margin:0 auto;display: flex; justify-content: center;align-items: center;">
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-map-marker"></i><br><div style="font-size: small">Vissone, BS</div></div>
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-phone"></i><br><div style="font-size: small">Tel: 340 870 4177</div></div>
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-envelope" > </i><br><div style="font-size: small">vissonemountainrace@gmail.com</div></div>
+    </div>
+      </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<div style="background-color: white;">
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <button class="fa fa-facebook-official w3-hover-opacity" style="background-color: Transparent; border: none;"onclick="window.location.href='https://www.facebook.com/VissoneMountainRace?hc_ref=ARRjN_BTtNNq9cidZe45MWe055V8ne9RuA3rlqEfSoh0x6AKVdSfDeWNj0nMz61PWK8&fref=nf&__xts__[0]=68.ARAru8CAdHx48UcYAqZRXsGm1b7Luyjj4RhQGucmJXydpIGkTLyPfOwDDLvg3MzPkqHRzvecdkZsrsJjVUP-onmkS3F-jJJOrhAAjgMQN_vUPOsAXl901xYAM-_yhspMIq8Z1Rdk1ZNMx4DHAXdbQxGsPcU28G5jEgDrYQPiWIMr8rqvrktwXXPM2y9VcnU3CvxMltVHiSZUCPUsHMpKwZlhw9eK0212JsgVN9oQu4cpBas5K9_EqeeGrgXGsH-BIGz0ZKhevn6VIJRUYSTezzUIHASSd4zc'"></button>
+  <button class="fa fa-instagram w3-hover-opacity" style="background-color: Transparent; border: none;" onclick="window.location.href='https://www.instagram.com/vissonemountainrace/'"></button>
+  <p class="w3-medium">Copyright &copy; Vissone Mountain Race 2023</p>
+</footer>
+</div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the video
+var video = document.getElementById("myVideo");
+
+
+</script>
+
+</body>
+</html>
+

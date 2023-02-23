@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dove Siamo - Vissone Mountain Race</title>
+<link rel="icon" type="image/x-icon" href="/immagini/logoBianco.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a:hover
+{
+  color: grey;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #FF8E24;
+  color: black;
+  text-align: center;
+  font-size: 100%;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\1F5FA';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover
+{
+  border-width: 1px 2px 1px 2px;
+  background-color: #FF8E24;
+  border: none;
+  color: #FFFFFF;
+}
+.button:hover span:after {
+  
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" style="background-color: #FF8E24;" >
+  <div class="p" style="background-color: #FF8E24;font-size: 1.1em;">
+      <p align='justify'>
+    <img src="immagini/logoArancio.png" align='left' style="width:10%;margin-bottom: 0.2em;margin-left: 0.2em" >
+   </p>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <a href="index.htm" style="color:white;margin-left:44.9%;margin-top: 5.3em;text-decoration: none" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+   <a href="chisiamo.html" style="margin-left:0em;margin-top: 5.3em;color: white;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHI SIAMO</a>
+     
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" style="margin-top: 5.3em;background-color: #FF8E24;color: white;" title="More">GARA <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4" >
+        <a href="5.html" style="position: relative;background-color: #FF8E24;color:white" class="w3-bar-item w3-button">5km NON COMPETITIVA</a>
+        <a href="10.html" style="position: relative;background-color: #FF8E24; color:white" class="w3-bar-item w3-button">10km COMPETITIVA</a>
+      </div>
+    </div>
+    <a href="dovesiamo.html" style="color:#FF8E24; background-color: black;margin-top: 5.3em;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOVE SIAMO</a>
+    <a href="gallery.html" style="margin-top: 5.3em;color: white;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOTO E VIDEO</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-bottom:4em;background-color: #FF8E24;">
+    <a href="index.htm" style=" background-color:#FF8E24;text-decoration: none" class="w3-bar-item w3-button w3-padding-large" >HOME</a>
+    <a href="chisiamo.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CHI SIAMO</a>
+    <a href="dovesiamo.html" style="color: black;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOVE SIAMO</a>
+    <a href="gallery.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOTO E VIDEO</a>
+    <a href="5.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">5km</a>
+    <a href="10.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">10km</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:7%">
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="width:100%" id="band">
+    <div class="container">
+      <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.304122629397!2d10.1597607!3d45.8284106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4783d7560894ad4d%3A0x76ee01918b5f2d5f!2sVia%20Vissone%20Inferiore%2C%2025050%20Vissone%20BS!5e1!3m2!1sit!2sit!4v1673193925438!5m2!1sit!2sit"></iframe>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour" style="background-color:#FF8E24;width: 100%;">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px;">
+      <h2 class="w3-wide w3-center" style="color: #FF8E24;font-weight: bold;">Come raggiungerci</h2>
+      <p class="w3-opacity w3-center"><i>Il Villaggio Gara della manifestazione è ubicato nel campo sportivo in Via Vissone Inferiore, a Vissone, in provincia di Brescia.<br><br>
+ 
+
+        Grazie al servizio web di Regione Lombardia “Infrastrutture e Mobilità” puoi calcolare con esattezza gli orari e i relativi prezzi per arrivare direttamente al nostro Villaggio Gara utilizzando i mezzi pubblici.<br><br>
+        
+         
+        
+        Link <a style="text-decoration: none; " href="https://www.muoversi.regione.lombardia.it"> www.muoversi.regione.lombardia.it</a></i></p><br>
+
+
+        <button onclick="window.location.href='https://www.google.it/maps/place/Via+Vissone+Inferiore,+25050+Vissone+BS/@45.8284103,10.1510059,2447m/data=!3m2!1e3!4b1!4m5!3m4!1s0x4783d7560894ad4d:0x76ee01918b5f2d5f!8m2!3d45.8284106!4d10.1597607'" class="button"><span>Vai a Google Maps </span></button>
+        
+      </div>
+    </div>
+  </div>
+<br><br>
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <h2 class="w3-wide">PARCHEGGI MESSI A DISPOSIZIONE PER LA GARA</h2><br><br>
+  <div class="container">
+    <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1-edcFPUPzNiyLmlr9wJ7N7LEWSa37rg&ehbc=2E312F" width="640" height="480"></iframe>
+  </div>
+</div>
+ 
+  <!-- The Contact Section -->
+  <br><br><div class="w3-container w3-content w3-padding-64" style="background-color: white;" id="contact">
+    <h2 class="w3-wide w3-center">CONTATTI</h2>
+    <p class="w3-opacity w3-center"><i>Qui trovi i nostri contatti!</i></p><br><br>
+    <div style="margin:0 auto;display: flex; justify-content: center;align-items: center;">
+        <div style="float:left;width:33%;text-align: center;"><i class="fa fa-map-marker"></i><br><div style="font-size: small">Vissone, BS</div></div>
+        <div style="float:left;width:33%;text-align: center;"><i class="fa fa-phone"></i><br><div style="font-size: small">Tel: 340 870 4177</div></div>
+        <div style="float:left;width:33%;text-align: center;"><i class="fa fa-envelope"></i><br><div style="font-size: small">vissonemountainrace@gmail.com</div></div>
+    </div>
+  </div>
+  <div style="background-color: white;background-image: url('immagini/nature.jpg'); min-height: 500px; background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover;">
+  </div>
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <button class="fa fa-facebook-official w3-hover-opacity" style="background-color: Transparent; border: none;"onclick="window.location.href='https://www.facebook.com/VissoneMountainRace?hc_ref=ARRjN_BTtNNq9cidZe45MWe055V8ne9RuA3rlqEfSoh0x6AKVdSfDeWNj0nMz61PWK8&fref=nf&__xts__[0]=68.ARAru8CAdHx48UcYAqZRXsGm1b7Luyjj4RhQGucmJXydpIGkTLyPfOwDDLvg3MzPkqHRzvecdkZsrsJjVUP-onmkS3F-jJJOrhAAjgMQN_vUPOsAXl901xYAM-_yhspMIq8Z1Rdk1ZNMx4DHAXdbQxGsPcU28G5jEgDrYQPiWIMr8rqvrktwXXPM2y9VcnU3CvxMltVHiSZUCPUsHMpKwZlhw9eK0212JsgVN9oQu4cpBas5K9_EqeeGrgXGsH-BIGz0ZKhevn6VIJRUYSTezzUIHASSd4zc'"></button>
+  <button class="fa fa-instagram w3-hover-opacity" style="background-color: Transparent; border: none;" onclick="window.location.href='https://www.instagram.com/vissonemountainrace/'"></button>
+  <p class="w3-medium">Copyright &copy; Vissone Mountain Race 2023</p>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>
