@@ -17,7 +17,7 @@ body {font-family: "Lato", sans-serif}
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+ /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
@@ -30,6 +30,16 @@ body {font-family: "Lato", sans-serif}
   width: 100%;
   height: 100%;
 }
+
+.responsive-iframePark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
 
 a:hover
 {
@@ -47,6 +57,7 @@ a:hover
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  left: 5%;
 }
 
 .button span {
@@ -92,14 +103,18 @@ a:hover
     margin-left: 27%;
 }
 .cont1{
-min-height: 51em;
-
-
-
-
+min-height: 35em;
 }
 .fonta{
   font-size: 9px;
+}
+}
+@media only screen and (min-width: 601px){
+ .cont1{
+   min-height: 35em;
+}
+.cont2{
+   height: 55em;
 }
 }
 @media only screen and (max-width:400px) {
@@ -130,10 +145,6 @@ min-height: 20em;
 
 @media only screen and(max-width:1000px) 
 {
-.cont1{
-  min-height: 51em;
-}
-
 
 .fonta{
   font-size: smaller;
@@ -198,9 +209,9 @@ min-height: 20em;
     width: 35%;
     margin-top: 20%;
     margin-left: 31%;
+  }
 }
 
-}
 @media (max-width: 600px) {
   .immagine {
     width: 45%;
@@ -210,19 +221,21 @@ min-height: 20em;
 
 }
 .cont1{
- height: 1em;
  position:relative;
- padding-top: 50px;
+ height: 68%;
  background-attachment: fixed;
- background-image: url('immagini/foto/principal.jpg');
  background-repeat: no-repeat; 
  background-size: cover;
- min-height: 50em;
 }
-.height{
-height: 20%;
 
+.cont2{
+ background-attachment: fixed;
+ background-repeat: no-repeat; 
+ background-size: cover;
+ height: 22em;
 }
+
+
 </style>
 <script type="text/javascript">
   var _iub = _iub || [];
@@ -277,7 +290,7 @@ height: 20%;
   <!-- The Tour Section -->
   <div class="w3-black" id="tour" style="background-color:#FF8E24;width: 100%;">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px;">
-      <h2 class="w3-wide w3-center" style="color: #FF8E24;font-weight: bold;">Come raggiungerci</h2>
+      <h2 class="w3-wide w3-center" style="color: #FF8E24;font-weight: bold;">COME RAGGIUNGERCI</h2>
       <p class="w3-opacity w3-center"><i>Il Villaggio Gara della manifestazione è ubicato nel campo sportivo in Via Vissone Inferiore, a Vissone, in provincia di Brescia.<br><br>
  
 
@@ -288,7 +301,7 @@ height: 20%;
         Link <a style="text-decoration: none; " href="https://www.muoversi.regione.lombardia.it"> www.muoversi.regione.lombardia.it</a></i></p><br>
 
 
-        <button onclick="window.location.href='https://www.google.it/maps/place/Via+Vissone+Inferiore,+25050+Vissone+BS/@45.8284103,10.1510059,2447m/data=!3m2!1e3!4b1!4m5!3m4!1s0x4783d7560894ad4d:0x76ee01918b5f2d5f!8m2!3d45.8284106!4d10.1597607'" class="button"><span>Vai a Google Maps </span></button>
+        <button style="margin-left: 5%;" onclick="window.location.href='https://www.google.it/maps/place/Via+Vissone+Inferiore,+25050+Vissone+BS/@45.8284103,10.1510059,2447m/data=!3m2!1e3!4b1!4m5!3m4!1s0x4783d7560894ad4d:0x76ee01918b5f2d5f!8m2!3d45.8284106!4d10.1597607'" class="button"><span>Vai a Google Maps </span></button>
         
       </div>
     </div>
@@ -296,11 +309,13 @@ height: 20%;
 <br><br>
 <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
   <h2 class="w3-wide" style="font-weight: bold;">PARCHEGGI MESSI A DISPOSIZIONE PER LA GARA</h2><br><br>
-  <div class="container">
-    <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1-edcFPUPzNiyLmlr9wJ7N7LEWSa37rg&ehbc=2E312F" width="640" height="480"></iframe>
+  <div class="container cont2">
+    <iframe class="responsive-iframePark" src="https://www.google.com/maps/d/embed?mid=1-edcFPUPzNiyLmlr9wJ7N7LEWSa37rg&ehbc=2E312F" width="640" height="480"></iframe>
   </div>
 </div>
  
+<div style="background-color: white;background-image: url('immagini/nature.jpg'); min-height: 500px; background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover;">
+</div>
   <!-- The Contact Section -->
   <br><br><div class="w3-container w3-content w3-padding-64" style="background-color: white;" id="contact">
     <h2 class="w3-wide w3-center">CONTATTI</h2>
@@ -311,8 +326,7 @@ height: 20%;
         <div style="float:left;width:33%;text-align: center;"><i class="fa fa-envelope"></i><br><div class="fonta">vissonemountainrace@gmail.com</div></div>
     </div>
   </div>
-  <div style="background-color: white;background-image: url('immagini/nature.jpg'); min-height: 500px; background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover;">
-  </div>
+  
 <!-- End Page Content -->
 </div>
 
