@@ -212,8 +212,27 @@ h3
   opacity: 1;
   right: 0;
 }
-
-
+@media only screen and(max-width:1000px) 
+{
+.fonta{
+  font-size: smaller;
+}
+}
+.titolo
+{
+  font-weight: bold;
+  font-size: 1.4em;
+}
+@media only screen and(max-width:600px) {
+  .titolo{
+    font-size: 0.7%;
+  }
+}
+@media  only screen and (max-width: 600px) {
+.fonta{
+  font-size: 9px;
+}
+}
 </style>
 <script type="text/javascript">
   var _iub = _iub || [];
@@ -236,7 +255,7 @@ h3
       <button class="w3-padding-large w3-button" style="margin-top: 5.3em;color:#FF8E24; background-color: black;" title="More">GARA <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4" >
         <a href="5.html" style="position: relative;color:white;background-color:#FF8E24 " class="w3-bar-item w3-button">5km NON COMPETITIVA</a>
-        <a href="10.html" style="position: relative;color:#FF8E24; background-color: black;" class="w3-bar-item w3-button">10km COMPETITIVA</a>
+        <a href="10.html" style="position: relative;color:#FF8E24; background-color: black;" class="w3-bar-item w3-button">11km COMPETITIVA</a>
       </div>
     </div>
     <a href="dovesiamo.html" style="margin-top: 5.3em;color: white;background-color: #FF8E24;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOVE SIAMO</a>
@@ -250,8 +269,8 @@ h3
     <a href="chisiamo.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CHI SIAMO</a>
     <a href="dovesiamo.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DOVE SIAMO</a>
     <a href="gallery.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOTO E VIDEO</a>
-    <a href="5.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">5km</a>
-    <a href="10.html" style="color: black;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">10km</a>
+    <a href="5.html" style="background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">5km - NON COMPETITIVA</a>
+    <a href="10.html" style="color: black;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">11km - COMPETITIVA</a>
 </div>
 
 <!-- Page content -->
@@ -279,7 +298,7 @@ h3
   <div style="background-color: white;margin-top: 5%;">
     <div class="w3-container w3-content w3-center w3-padding-64" style="background-color: white;position: relative;" id="band">
       <div class="colonna sx" style="text-align: center;">
-        <h2 style="font-family:'Helvetica';font-weight: bold;text-align: center;">PROGRAMMA</h2>
+        <p class="titolo" style="font-family:'Helvetica';font-weight: bold;text-align: center;">PROGRAMMA</p>
         <p>
           <p>Venerdì 02 Giugno 2023</p>
           <p>07:00 - ritrovo presso campo sportivo di Vissone</p>
@@ -288,7 +307,7 @@ h3
         </p>
       </div>
       <div class="colonna dx" style="text-align: center;padding-left: 2%;padding-right: 2%;">
-        <h2 style="font-family:'Helvetica';font-weight: bold;text-align: center;">REGOLAMENTO</h2>
+        <p class="titolo" style="font-family:'Helvetica';font-weight: bold;text-align: center;">REGOLAMENTO</p>
         <p>Possono partecipare alla "VISSONE MOUNTAIN RACE" tutti gli atleti che abbiano compiuto il 16° anno di età, tutti i tesserati FSA o enti di promozione sportiva e liberi (che siano in possesso del certificato medico sportivo) per l'edizione competitiva, mentre per la camminata è aperta a tutti...<a href="https://www.lemulatere.it/vissone/gara.html" style="font-style: italic;color: #FF8E24;">Leggi tutto</a></p>
       </div>
     </div>
@@ -400,9 +419,9 @@ h3
     <h2 class="w3-wide w3-center">CONTATTI</h2>
     <p class="w3-opacity w3-center"><i>Qui trovi i nostri contatti!</i></p><br><br><br>
     <div style="margin:0 auto;display: flex; justify-content: center;align-items: center;">
-        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-map-marker"></i><br><div style="font-size: small">Vissone, BS</div></div>
-        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-phone"></i><br><div style="font-size: small">Tel: 340 870 4177</div></div>
-        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-envelope" > </i><br><div style="font-size: small">vissonemountainrace@gmail.com</div></div>
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-map-marker"></i><br><div class="fonta">Vissone, BS</div></div>
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-phone"></i><br><div class="fonta">Tel: 340 870 4177</div></div>
+        <div style="float:left;width: 33%;text-align: center;"><i class="fa fa-envelope" > </i><br><div class="fonta">vissonemountainrace@gmail.com</div></div>
     </div>
       </div>
   </div>
