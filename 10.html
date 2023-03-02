@@ -288,6 +288,24 @@ table{
     margin-top: 10%;
   }
 }
+
+.immagineTopLeft{
+  width:10%;
+  margin-bottom: 0.2em;
+  margin-left: 0.2em;
+  float: left;
+}
+@media (max-width:1500px) and (min-width:901px){
+  .immagineTopLeft{
+    margin-top: 1em;
+  }
+}
+@media (max-width:900px) and (min-width:601px) {
+  .immagineTopLeft{
+    margin-top: 2em;
+    margin-bottom: 0em;
+  }
+}
 </style>
 <script type="text/javascript">
   var _iub = _iub || [];
@@ -301,7 +319,7 @@ table{
 <div class="w3-top" style="background-color: #FF8E24;" >
   <div style="background-color: #FF8E24;font-size: 1.1em;">
       <p align='justify'>
-    <img src="immagini/logoArancio.png" align="left" style="width:10%;margin-bottom: 0.2em;margin-left: 0.2em" >
+    <img src="immagini/logoArancio.png" class="immagineTopLeft" >
    </p>
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
    <a href="index.htm" class="w3-bar-item w3-button w3-padding-large w3-hide-small index">HOME</a>
