@@ -263,6 +263,19 @@ min-height: 20em;
     height: 30em;
   }
 }
+.w3-bar-item.w3-button.w3-padding-large.w3-hide-small.index{
+  margin-left: 40em;
+  margin-top: 5.3em;
+  color:#FF8E24; 
+  background-color: black;
+  text-decoration: none;
+}
+
+@media (max-width:1500px) and (min-width:601px){
+  .w3-bar-item.w3-button.w3-padding-large.w3-hide-small.index{
+    margin-left: 0em;
+  }
+}
 </style>
 <script type="text/javascript">
   var _iub = _iub || [];
@@ -276,20 +289,22 @@ min-height: 20em;
 <div class="w3-top" style="background-color: #FF8E24;" >
   <div class="p" style="background-color: #FF8E24;font-size: 1.1em;">
       <p align='justify'>
-    <img src="immagini/logoArancio.png" align='left' style="width:10%;margin-bottom: 0.2em;margin-left: 0.2em" >
+    <img src="immagini/logoArancio.png" style="width:10%;margin-bottom: 0.2em;margin-left: 0.2em;float: left;" >
    </p>
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars" ></i></a>
-   <a href="index.htm" style="margin-left:46.3%;margin-top: 5.3em;color:#FF8E24; background-color: black;text-decoration: none" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
-   <a href="chisiamo.html" style="margin-left:0em;margin-top: 5.3em;color: white;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHI SIAMO</a>
-     <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" style="margin-top: 5.3em;background-color: #FF8E24;color: white;" title="More">GARA <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4" >
-        <a href="5.html" style="position: relative;background-color: #FF8E24;color:white" class="w3-bar-item w3-button">5km - NON COMPETITIVA</a>
-        <a href="10.html" style="position: relative;background-color: #FF8E24; color:white" class="w3-bar-item w3-button">11km - COMPETITIVA</a>
+   <div>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars" ></i></a>
+      <a href="index.htm" class="w3-bar-item w3-button w3-padding-large w3-hide-small index">HOME</a>
+      <a href="chisiamo.html" style="margin-left:0em;margin-top: 5.3em;color: white;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHI SIAMO</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" style="margin-top: 5.3em;background-color: #FF8E24;color: white;" title="More">GARA <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4" >
+          <a href="5.html" style="position: relative;background-color: #FF8E24;color:white;" class="w3-bar-item w3-button">5km - NON COMPETITIVA</a>
+          <a href="10.html" style="position: relative;background-color: #FF8E24; color:white;" class="w3-bar-item w3-button">11km - COMPETITIVA</a>
+        </div>
       </div>
+      <a href="dovesiamo.html" style="margin-left: 0em;margin-top: 5.3em;color: white;background-color: #FF8E24;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOVE SIAMO</a>
+      <a href="gallery.html" style="margin-left: 0em;margin-top: 5.3em;color: white;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOTO E VIDEO</a>
     </div>
-    <a href="dovesiamo.html" style="margin-top: 5.3em;color: white;background-color: #FF8E24;" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOVE SIAMO</a>
-    <a href="gallery.html" style="margin-top: 5.3em;color: white;background-color: #FF8E24;"class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOTO E VIDEO</a>
   </div>
 </div>
 
