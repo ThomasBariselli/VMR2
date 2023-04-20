@@ -326,6 +326,21 @@ min-height: 20em;
   background-color: #FF8E24;
   color: white;
 }
+#loading_screen
+{  
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: #FFF;  
+  text-align: center;
+  padding: 80px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+}
 </style>
 <script type="text/javascript">
   var _iub = _iub || [];
@@ -335,7 +350,11 @@ min-height: 20em;
 </head>
 <body style="background-color: white;">
 <!-- Navbar -->
-
+<div id="loading_screen">
+  <h1>Loading...</h1> 
+  <p>La pagina è in caricamento<br/>
+  Resta connesso e non cambiare sito!</p>
+</div>
 <div class="w3-top" style="background-color: #FF8E24;" >
   <div class="p" style="background-color: #FF8E24;font-size: 1.1em;">
       <p align='justify'>
@@ -539,7 +558,18 @@ VanillaTilt.init(document.querySelector(".w3-third.w3-margin-bottom"), {
 		max: 25,
 		speed: 200
 	});
-
+(function(){   
+  if (window.addEventListener)
+  {
+    window.addEventListener("load", nascondi_loading_screen, false);    
+  }else{
+    window.attachEvent("onload", nascondi_loading_screen);
+  }
+})();
+function nascondi_loading_screen()
+{
+  document.getElementById("loading_screen").style.display = 'none';
+}
 </script>
 
 </body>
